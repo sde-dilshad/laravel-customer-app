@@ -45,7 +45,7 @@ class CustomerControllerTest extends TestCase
         ]);
 
         $this->user = $user;
-        $this->token = $response['token'];
+        $this->token = $response->json('token');
     }
 
     public function test_get_all_customers()
