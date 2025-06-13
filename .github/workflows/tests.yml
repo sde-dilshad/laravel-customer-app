@@ -49,5 +49,10 @@ jobs:
       - name: Build Assets
         run: npm run build
 
+      - name: Fix OAuth key permissions
+        run: |
+          chmod 600 secrets/oauth/oauth-public.key
+          chmod 600 secrets/oauth/oauth-private.key
+
       - name: Tests
         run: ./vendor/bin/phpunit
