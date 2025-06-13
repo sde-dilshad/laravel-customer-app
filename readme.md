@@ -10,7 +10,7 @@
 # Project Initialization Guide
 
 Follow these steps to set up the Laravel project running in Docker.
-
+````
 ---
 
 ## 1. Clone the Repository
@@ -121,5 +121,3 @@ docker exec -it laravel-app php artisan test
 ---
 
 This setup will get your Laravel app ready with Passport authentication inside Docker and allow you to run your tests smoothly.
-
-```
