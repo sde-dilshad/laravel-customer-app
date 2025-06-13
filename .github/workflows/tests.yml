@@ -50,7 +50,7 @@ jobs:
         run: npm run build
 
       - name: Generate Passport Keys
-        run: php artisan passport:keys
+        run: php artisan passport:keys --force
 
       - name: Fix OAuth key permissions
         run: |
