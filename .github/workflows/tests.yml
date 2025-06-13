@@ -49,9 +49,6 @@ jobs:
       - name: Build Assets
         run: npm run build
 
-      - name: Generate Passport Keys
-        run: php artisan passport:keys --force
-
       - name: Fix OAuth key permissions
         run: |
           chmod 600 app/secrets/oauth/oauth-public.key
